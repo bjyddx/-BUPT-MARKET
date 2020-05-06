@@ -1,0 +1,27 @@
+<!--miniprogram/pages/mine/index.wxml-->
+<view>
+<image class="tupian" src="/images/WechatIMG489.png"></image>
+</view>
+<view class="list-wrapper">
+    <view class="alllists">
+      <block wx:for="{{menuitems}}" wx:key="menu_for">
+        <navigator url="{{item.url}}" class="lists">
+        <view class='content'>
+          <view class="listimg">
+            <image src="{{item.icon}}"></image>
+          </view>
+          <view class="listtext">{{item.text}}</view>
+          <view class="arrows">
+            <image src="{{item.arrows}}"></image>
+          </view>
+        </view>
+        </navigator>
+        <!-- 分割线 -->
+        <view class="divLine"></view>
+      </block>
+    </view>
+  </view>
+
+ 
+
+

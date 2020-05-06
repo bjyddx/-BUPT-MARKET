@@ -1,0 +1,26 @@
+<view class="container">
+
+  <view class="search">
+    <view class="search_input">
+      <input class="search_input2" placeholder='搜索商品' value='{{searchVal}}' bindconfirm="search" bindinput="input"></input>
+      <image class="search_clear"  wx:if="{{ searchVal != '' }}" catchtap="clear" src="/images/20190719152955467.png"></image>
+    </view>
+    <image class="search_image" src="/images/20190719153008827.png" catchtap="search"></image>
+  </view>
+  <scroll-view class="search_scroll" scroll-y="true">
+      <view class="search_kuangjia"> 
+        <view class="search_items" wx:for="{{goodList.length}}" wx:key="index">
+          <view>
+            <image class="search_images" src="{{goodList[index].image}}"></image>
+          </view>
+          <view class="wenzi">
+            <view>{{goodList[index].name}}</view>
+            <text class="contnet">{{goodList[index].description}}</text>
+            <view class="rmb">￥{{goodList[index].price}}元</view>
+            <view class="xiangqing">查看详情>></view>
+          </view>
+        </view>
+      </view>
+  </scroll-view>
+
+</view>

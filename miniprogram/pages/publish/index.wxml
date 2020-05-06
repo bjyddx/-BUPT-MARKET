@@ -1,0 +1,70 @@
+
+<view class="container">
+
+  <view class="top">
+    <text>填写商品信息</text>
+  </view>
+
+  
+  <form bindsubmit="submit">
+    <view class="sectionName">
+      <text class="textMeth">商品名称</text>
+      
+      <input class="inputMeth"  name="inputName" placeholder="请输入商品名称" ></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">商品数量</text>
+      
+      <input class="inputMeth"  name="inputNumber" placeholder="请输入商品数量" ></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">商品价格</text>
+      <input class="inputMeth" name="inputPrice" placeholder="请输入商品价格"></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">商品类型</text>
+       <view class="section">
+       <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            当前选择：{{array[index]}}
+             
+          </view>
+       </picker>
+     </view>
+    </view>
+    
+     <view class="sectionName">
+       <text class="textMeth">简要描述</text>
+      <input class="inputMeth" name="inputDescription" placeholder="请输入商品简要"></input>
+     </view>
+
+          <view class="sectionName">
+       <text class="textMeth">电子邮箱</text>
+      <input class="inputMeth" name="inputEmail" placeholder="请输入电子邮箱"></input>
+     </view>
+
+          <view class="sectionName">
+       <text class="textMeth">微信账号</text>
+      <input class="inputMeth" name="inputWechat" placeholder="请输入微信账号"></input>
+     </view>
+   
+     <view class="list" style="height:800rpx">
+      <view bindtap="changeBigImg">
+        <text class="textMeth">商品图片：</text>
+        <image style="height:700rpx" src="{{imgurl}}"></image>
+        <input value="{{imgurl}}" hidden="true" />
+      </view>
+     </view>
+    
+      <button class="refresh" formType="submit">提交</button>
+
+      <button type="warn" formType="reset">重置</button>
+
+  </form>
+
+
+</view>
+

@@ -1,0 +1,45 @@
+/* miniprogram/pages/login/login.wxss */
+.content{
+margin-top: 40px;
+}
+.account{
+display: flex;
+flex-direction: row;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 10px;
+width: 90%;
+}
+.border1{
+background-color:#E0E3DA;
+height: 5rpx;
+width: 80%;
+margin-top: 20rpx;
+margin-left: 50rpx;
+}
+.title{
+margin-right: 30px;
+font-weight: bold;
+}
+
+.btn1{
+width: 80%;
+margin-top:40px;
+color: white;
+background-color: burlywood;
+border-radius: 98rpx;
+}
+.btn1::after {
+border-radius: 98rpx;
+}
+
+.btn2{
+width: 80%;
+margin-top:5rpx;
+color: white;
+background-color: burlywood;
+border-radius: 98rpx;
+}
+.btn2::after {
+border-radius: 98rpx;
+}

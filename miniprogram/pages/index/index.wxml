@@ -1,0 +1,90 @@
+<!--pages/search/search.wxml-->
+
+
+<!--图片轮播布局-->
+<!--swiper图片轮播布局-->
+<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
+
+ <swiper-item>
+<image class="ad01" src="/images/bupt01.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="/images/bupt02.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="/images/bupt03.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="/images/bupt04.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="/images/bupt05.jpg"  ></image>
+ </swiper-item>
+
+
+
+</swiper>
+<!---->
+<view class="navs">
+
+<view class="navs1">
+<navigator url="/pages/types/sports/sports">
+<view class="nav-item1">
+<image src="/images/WechatIMG836.png "class="nav-image1"></image>
+<text>体育类</text>
+</view>
+</navigator>
+
+<navigator url="/pages/types/books/books">
+<view class="nav-item1">
+<image src="/images/WechatIMG835.jpeg "class="nav-image1"></image>
+<text>书籍类</text>
+</view>
+</navigator>
+
+<navigator url="/pages/types/electronic/electronic">
+<view class="nav-item1">
+<image src="/images/WechatIMG834.jpeg "class="nav-image1"></image>
+<text>电子类</text>
+</view>
+</navigator>
+
+<navigator url="/pages/types/others/others">
+<view class="nav-item1">
+<image src="/images/WechatIMG837.png "class="nav-image1"></image>
+<text>其他</text>
+</view>
+</navigator>
+</view>
+</view>
+
+
+<!--搜索窗口布局-->
+<view class="root">
+<navigator url="../find/find">
+    <view class="top">
+      <view class="inputtMeth">
+        <input class="inputMeth" placeholder="请点击此处搜索商品" id="inputName" name="inputName"></input>
+      </view>
+    </view>
+    </navigator>
+    </view>
+
+
+
+<view wx:for="{{goodList}}"catchtap="goDetail" data-id="{{item._id}}">
+  <van-card
+  price="{{item.price}}"
+  title="{{item.name}}"
+  email="{{item.email}}"
+  wechat="{{item.wechat}}"
+  thumb="{{item.bigImg[0]}}">
+<view slot="tags">
+<van-tag type="primary">{{item.description}}</van-tag>
+</view>
+</van-card>
+</view>

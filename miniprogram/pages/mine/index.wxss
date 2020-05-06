@@ -1,0 +1,96 @@
+/* miniprogram/pages/mine/index.wxss */
+
+.avatar-wrapper {
+  background: #1b82d1;
+  padding: 25px 0;
+}
+ 
+.avatar-wrapper .avatar {
+  margin: 0 auto;
+  text-align: center;
+}
+ 
+.avatar-wrapper .avatar image {
+  width: 100px;
+  height: 100px;
+}
+ 
+.avatar-wrapper .text {
+  text-align: center;
+  color: #fff;
+}
+ 
+.listimg image {
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+}
+ 
+.content{
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+ 
+/*分割线样式*/
+.divLine{
+ background: #E0E3DA;
+ width: 100%;
+ height: 5rpx;
+}
+ 
+.arrows image {
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  margin-left: 500rpx;
+}
+
+
+.wx-cells {
+  width: 100%;
+  margin-top: 15rpx;
+  font-size: 34rpx;
+  border-top: 1rpx solid #d9d9d9;
+  border-bottom: 1rpx solid #d9d9d9;
+  background-color: #fff;
+}
+.wx-cell {
+  padding: 20rpx 25rpx;
+  display: flex;
+  align-items: center;
+}
+.wx-cell-icon{
+  width: 56rpx;
+  height: 56rpx;
+}
+.wx-cell-text{
+  flex: 1;
+  margin-left: 30rpx;
+}
+.wx-cell-arrow{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 10rpx;
+}
+
+.wx-cell-inner{
+  padding: 30rpx 30rpx 30rpx 0;  
+  margin-left: 30rpx; 
+  border-bottom: 1rpx solid #d9d9d9; 
+}
+
+.wx-cell-left{
+  font-size: 35rpx;
+  align-items: center;
+}
+
+.wx-cell-right{
+  align-items: center;
+}
+
+.wx-cell-right-text{
+  font-size: 30rpx;
+  color: #808080;
+}

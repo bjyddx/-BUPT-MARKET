@@ -1,0 +1,54 @@
+
+<view class="container">
+
+  <view class="top">
+    <text>发布帖子</text>
+  </view>
+
+  
+  <form bindsubmit="submit">
+    <view class="sectionName">
+      <text class="textMeth">主题</text>
+      
+      <input class="inputMeth"  name="title" placeholder="想个好标题吧" ></input>
+    </view>
+
+    <view class="sectionName">
+      <text class="textMeth">内容</text>
+      
+      <input class="inputMeth"  name="content" placeholder="快来分享你的使用心得吧" ></input>
+    </view>
+
+
+
+    <view class="sectionName">
+      <text class="textMeth">帖子类型</text>
+       <view class="section">
+       <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker">
+            当前选择：{{array[index]}}
+             
+          </view>
+       </picker>
+     </view>
+    </view>
+    
+     
+   
+     <view class="list" style="height:800rpx">
+      <view bindtap="changeBigImg">
+        <text class="textMeth">添加图片：</text>
+        <image style="height:700rpx" src="{{imgurl}}"></image>
+        <input value="{{imgurl}}" hidden="true" />
+      </view>
+     </view>
+    
+      <button class="refresh" formType="submit">发布</button>
+
+      <button type="warn" formType="reset">重置</button>
+
+  </form>
+
+
+</view>
+

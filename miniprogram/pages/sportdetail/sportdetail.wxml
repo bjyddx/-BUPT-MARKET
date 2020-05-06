@@ -1,0 +1,2 @@
+<!--pages/sportdetail/sportdetail.wxml-->
+<text>{{sport.name}}</text>

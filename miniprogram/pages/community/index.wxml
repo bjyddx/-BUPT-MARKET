@@ -1,0 +1,17 @@
+<navigator url="../community/discuss/index">
+<view>
+<button class="btn1" >发帖</button>
+</view>
+</navigator>
+ 
+ 
+<view wx:for="{{discussionlist}}"catchtap="goDetail" data-id="{{item._id}}">
+  <van-card
+  title="{{item.title}}"
+  content="{{item.content}}"
+  thumb="{{item.bigImg[0]}}">
+<view slot="tags">
+<van-tag type="primary">{{item.content}}</van-tag>
+</view>
+</van-card>
+</view>

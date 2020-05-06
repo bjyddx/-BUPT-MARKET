@@ -1,0 +1,30 @@
+<!--miniprogram/pages/register/register.wxml-->
+<view class="title">用户注册</view>
+
+<view class="account">
+<view class="title1">账号</view>
+<input class="input" placeholder="请输入账号" bindinput="inputUserName"></input>
+</view>
+
+
+<view class="border1"></view>
+<view class="account"> 
+<view class="title1">密码</view>
+<input bindinput="inputPassword" class="input" placeholder="请输入密码" password="true"></input>
+</view>
+<view class="border1"></view>
+
+
+<view class="account">
+<view class="title1">密码again</view>
+<input bindinput="inputPasswordAgain" class="input" placeholder="请再次输入密码" password="true"></input>
+</view>
+<view class="border1"></view>
+
+<view>
+<button class="button" bindtap="register">注册</button>
+</view>
+
+<navigator url="/pages/login/login">
+<button class="button">点此返回登录</button>
+</navigator>

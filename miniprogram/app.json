@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/publish/index",
+    "pages/types/books/books",
+    "pages/types/electronic/electronic",
+    "pages/types/others/others",
+    "pages/types/sports/sports",
+    "pages/community/index",
+    "pages/find/find",
+    "pages/community/discuss/index",
+    "pages/community/comment/index",
+   "pages/style/guide",
+    "pages/mine/index",
+    "pages/mine/thing/thing",
+    "pages/mine/question/question",
+    "pages/mine/help/help",
+    "pages/mine/wenti/wenti",
+    "pages/mine/kefu/kefu",
+    "pages/bookdetail/bookdetail",
+    "pages/sportdetail/sportdetail",
+    "pages/electronicdetail/electronicdetail",
+    "pages/otherdetail/otherdetail",
+    "pages/discussiondetail/discussiondetail",
+    
+        "pages/mine/wenti/wenti/wenti01",
+        "pages/mine/wenti/wenti/wenti02",
+        "pages/mine/wenti/wenti/wenti03"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "BUPT MARKET",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/shou-off.png",
+        "selectedIconPath": "images/shou-on.png"
+      },
+      {
+        "pagePath": "pages/publish/index",
+        "text": "发布",
+        "iconPath": "images/publish.jpeg",
+        "selectedIconPath": "images/publish.jpeg"
+      },
+      {
+        "pagePath": "pages/community/index",
+        "text": "讨论区",
+        "iconPath": "images/talk.jpg",
+        "selectedIconPath": "images/talk.jpg"
+      },
+      {
+        "pagePath": "pages/mine/index",
+        "text": "个人中心",
+        "iconPath": "images/hui-off.png",
+        "selectedIconPath": "images/hui-on.png"
+      }
+
+
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-card": "miniprogram_npm/vant-weapp/card/index",
+    "van-tag": "miniprogram_npm/vant-weapp/tag/index",
+    "i-row": "dist/row/index",
+    "i-col": "dist/col/index"
+  }
+}

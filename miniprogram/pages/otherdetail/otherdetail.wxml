@@ -1,0 +1,2 @@
+<!--pages/otherdetail/otherdetail.wxml-->
+<text>{{other.name}}</text>

@@ -1,0 +1,36 @@
+<view class='text'>
+  <view class='line_y'></view>
+  <text>常见问题</text>
+</view>
+
+<navigator url='../wenti/wenti/wenti01'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/tubiao01.png"></image>
+    <text class="wx-cell-text">如何登陆平台和注册账号的问题？</text>
+    <image class="wx-cell-arrow" src="/images/right-gray.png"></image>
+  </view>
+</view>
+</navigator>
+
+<navigator url='../wenti/wenti/wenti02'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/tubiao02.png"></image>
+    <text class="wx-cell-text">question2</text>
+    <image class="wx-cell-arrow" src="/images/right-gray.png"></image>
+  </view>
+</view>
+</navigator>
+
+<navigator url='../wenti/wenti/wenti03'>
+<view class="wx-cells">
+  <view class="wx-cell">
+    <image class="wx-cell-icon"src="/images/tubiao03.png"></image>
+    <text class="wx-cell-text">question3</text>
+    <image class="wx-cell-arrow" src="/images/right-gray.png"></image>
+  </view>
+</view>
+</navigator>
+
+ 

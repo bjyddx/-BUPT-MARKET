@@ -1,0 +1,8 @@
+<text>{{comment.comment}}</text>
+<text>{{comment.childComment}}</text>
+
+ <form bindsubmit="submit">
+    <view class="list" style="height:200rpx">
+      <input  name="inputDiscussion" placeholder="说点想说的 问点想问的" ></input>
+    </view>
+    </form>

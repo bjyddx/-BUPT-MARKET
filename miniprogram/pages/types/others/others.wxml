@@ -1,0 +1,15 @@
+<!--miniprogram/pages/types/others/others.wxml-->
+
+<text>其他商品</text>
+<view wx:for="{{otherlist}}"catchtap="goDetail" data-id="{{item._id}}">
+  <van-card
+  price="{{item.price}}"
+  title="{{item.name}}"
+  email="{{item.email}}"
+  wechat="{{item.wechat}}"
+  thumb="{{item.bigImg[0]}}">
+<view slot="tags">
+<van-tag type="primary">{{item.description}}</van-tag>
+</view>
+</van-card>
+</view>

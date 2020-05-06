@@ -1,0 +1,22 @@
+<!--miniprogram/pages/login/login.wxml-->
+<view class="content">
+
+<view class="account">
+<view class="title">账号</view>
+<input bindinput="inputName" placeholder="用户名" placeholder-style="color:#999999;"/></view>
+
+<view class="border1"></view>
+
+
+<view class="account">
+<view class="title">密码</view>
+
+<input bindinput="inputPassword" placeholder="请输入密码" password/></view>
+<view class="border1"></view>
+
+
+<button class="btn1" bindtap="login">登录</button> 
+</view>
+<navigator url="/pages/register/register">
+<button class="btn2" >注册</button> 
+</navigator>

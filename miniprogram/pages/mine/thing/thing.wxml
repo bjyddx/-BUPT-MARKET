@@ -1,0 +1,12 @@
+<!--miniprogram/pages/mine/thing/thing.wxml-->
+<view wx:for="{{thinglist}}">
+  <van-card
+  price="{{item.price}}"
+  title="{{item.name}}"
+  thumb="{{item.bigImg[0]}}">
+<view slot="tags">
+<van-tag type="primary">{{item.description}}</van-tag>
+</view>
+</van-card>
+</view>
+

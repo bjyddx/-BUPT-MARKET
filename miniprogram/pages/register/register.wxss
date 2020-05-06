@@ -1,0 +1,45 @@
+/* miniprogram/pages/register/register.wxss */
+page{
+background-color:white;
+}
+.account{
+display: flex;
+flex-direction: row;
+padding-left: 20px;
+padding-top: 20px;
+padding-bottom: 10px;
+width: 90%;
+}
+
+.title{
+margin-top: 100rpx;
+text-align: center;
+font-size: 50rpx;
+}
+
+.title1{
+margin-right: 30px;
+font-weight: bold;
+font-size:40rpx;
+}
+.border1{
+background-color:#E0E3DA;
+height: 5rpx;
+width: 80%;
+margin-top: 20rpx;
+margin-left: 50rpx;
+}
+.button{
+width: 80%;
+margin-top:20rpx;
+color: white;
+background-color: burlywood;
+border-radius: 98rpx;
+}
+.button::after {
+border-radius: 98rpx;
+}
+
+.login{
+margin-top: 20rpx;
+}

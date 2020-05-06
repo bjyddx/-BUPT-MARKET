@@ -1,0 +1,2 @@
+<!--pages/bookdetail/bookdetail.wxml-->
+<text>{{book.name}}</text>

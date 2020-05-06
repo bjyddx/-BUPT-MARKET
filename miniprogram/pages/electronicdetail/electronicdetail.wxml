@@ -1,0 +1,2 @@
+<!--pages/electronicdetail/electronicdetail.wxml-->
+<text>{{electronic.name}}</text>
