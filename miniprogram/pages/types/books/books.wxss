@@ -1,4 +1,8 @@
 /* miniprogram/pages/types/books/books.wxss */
+.top{
+  font-size: 50rpx;
+  font-weight: bolder;
+}
 .search_image{
   width: 50rpx;
   height: 50rpx;

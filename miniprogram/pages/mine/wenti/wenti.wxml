@@ -17,7 +17,7 @@
 <view class="wx-cells">
   <view class="wx-cell">
     <image class="wx-cell-icon"src="/images/tubiao02.png"></image>
-    <text class="wx-cell-text">question2</text>
+    <text class="wx-cell-text">如何处理讨论区违规发言？</text>
     <image class="wx-cell-arrow" src="/images/right-gray.png"></image>
   </view>
 </view>
@@ -27,7 +27,7 @@
 <view class="wx-cells">
   <view class="wx-cell">
     <image class="wx-cell-icon"src="/images/tubiao03.png"></image>
-    <text class="wx-cell-text">question3</text>
+    <text class="wx-cell-text">忘记密码怎么办？</text>
     <image class="wx-cell-arrow" src="/images/right-gray.png"></image>
   </view>
 </view>

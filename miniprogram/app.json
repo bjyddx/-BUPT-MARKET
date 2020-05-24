@@ -1,33 +1,40 @@
-{
-  "pages": [
+  {
+    "pages": [
+    "pages/login/login",
     "pages/index/index",
     "pages/publish/index",
+    "pages/find/find",
+    "pages/mine/index",
+    "pages/community/index",
+    "pages/style/guide",
+   "pages/register/register",
+
     "pages/types/books/books",
     "pages/types/electronic/electronic",
     "pages/types/others/others",
     "pages/types/sports/sports",
-    "pages/community/index",
-    "pages/find/find",
-    "pages/community/discuss/index",
-    "pages/community/comment/index",
-   "pages/style/guide",
-    "pages/mine/index",
-    "pages/mine/thing/thing",
-    "pages/mine/question/question",
-    "pages/mine/help/help",
-    "pages/mine/wenti/wenti",
-    "pages/mine/kefu/kefu",
     "pages/bookdetail/bookdetail",
     "pages/sportdetail/sportdetail",
     "pages/electronicdetail/electronicdetail",
     "pages/otherdetail/otherdetail",
     "pages/discussiondetail/discussiondetail",
-    
-        "pages/mine/wenti/wenti/wenti01",
-        "pages/mine/wenti/wenti/wenti02",
-        "pages/mine/wenti/wenti/wenti03"
+    "pages/community/discuss/index",
+     
+    "pages/mine/thing/thing",
+    "pages/mine/question/question",
+    "pages/mine/help/help",
+    "pages/mine/wenti/wenti",
+    "pages/mine/kefu/kefu",
+    "pages/mine/wenti/wenti/wenti01",
+    "pages/mine/wenti/wenti/wenti02",
+    "pages/mine/wenti/wenti/wenti03"
   ],
-  "window": {
+     
+   
+    
+       
+  
+    "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
@@ -69,6 +76,7 @@
     "van-card": "miniprogram_npm/vant-weapp/card/index",
     "van-tag": "miniprogram_npm/vant-weapp/tag/index",
     "i-row": "dist/row/index",
-    "i-col": "dist/col/index"
+    "i-col": "dist/col/index",
+    "van-button": "miniprogram_npm/vant-weapp/button/index"
   }
 }

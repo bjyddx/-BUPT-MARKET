@@ -1,2 +1,11 @@
 <!--pages/otherdetail/otherdetail.wxml-->
-<text>{{other.name}}</text>
+
+<view>
+<image src="{{other.bigImg[0]}}"></image>
+</view>
+<text>商品名称：{{other.name}}</text>
+<text>商品价格：{{other.price}}元</text>
+<text>商品数量：x{{other.number}}</text>
+<text>商品描述：{{other.description}}</text>
+<text>卖家邮箱：{{other.email}}</text>
+<text>卖家微信：{{other.wechat}}</text>

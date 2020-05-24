@@ -1,3 +1,6 @@
+<!--页面根标签-->
+
+
 <navigator url="../community/discuss/index">
 <view>
 <button class="btn1" >发帖</button>
@@ -15,3 +18,5 @@
 </view>
 </van-card>
 </view>
+
+

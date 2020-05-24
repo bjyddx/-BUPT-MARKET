@@ -1,14 +1,49 @@
 <!--pages/discussiondetail/discussiondetail.wxml-->
-<text>{{comment.title}}</text>
-<text>{{comment.content}}</text>
-<text>{{comment.childComment}}</text>
-
+<view class="dis01">
+<text>主题：{{comment.title}}</text>
+</view><view class="dis02">
+<text>内容：{{comment.content}}</text>
+</view>
+<view class="com01">
+<text>{{comment.childComment[0]}}</text>
+</view>
+<view class="com02">
+<text>{{comment.childComment[1]}}</text>
+</view>
+<view class="com03">
+<text>{{comment.childComment[2]}}</text>
+</view>
+<view class="com04">
+<text>{{comment.childComment[3]}}</text>
+</view>
+<view class="com05">
+<text>{{comment.childComment[4]}}</text>
+</view>
+<view class="com06">
+<text>{{comment.childComment[5]}}</text>
+</view>
+<view class="com07">
+<text>{{comment.childComment[6]}}</text>
+</view>
+<view class="com08">
+<text>{{comment.childComment[7]}}</text>
+</view>
+<view class="com09">
+<text>{{comment.childComment[8]}}</text>
+</view>
+<view class="com10">
+<text>{{comment.childComment[9]}}</text>
+</view>
+<view class="com11">
+<text>{{comment.childComment[10]}}</text>
+</view>
+<view class="com12">
+<text>{{comment.childComment[11]}}</text>
+</view>
  <form bindsubmit="submit">
-    <view class="list" style="height:200rpx">
-      
-      <input  name="inputDiscussion" placeholder="说点想说的 问点想问的" ></input>
+    <view class="list" style="height:200rpx"> 
+    <input  name="inputDiscussion" placeholder="说点想说的 问点想问的" ></input>
     </view>
-
 
  <button class="refresh" formType="submit">评论</button>
  </form>

@@ -1,1 +1,60 @@
 /* pages/discussiondetail/discussiondetail.wxss */
+.dis01{
+font-size: 50rpx;
+color: red;
+font-weight: bold;
+
+}
+.dis02{
+font-size: 50rpx;
+font-weight: bold;
+
+}
+.com01{
+
+  color:blueviolet;
+}
+.com02{
+
+  color:blueviolet;
+}
+.com03{
+
+  color:blueviolet;
+}
+.com04{
+
+  color:blueviolet;
+}
+.com05{
+
+  color:blueviolet;
+}
+.com06{
+
+  color:blueviolet;
+}
+.com07{
+
+  color:blueviolet;
+}
+.com08{
+
+  color:blueviolet;
+}
+.com09{
+
+  color:blueviolet;
+}
+.com10{
+
+  color:blueviolet;
+}
+.com11{
+
+  color:blueviolet;
+}
+.com12{
+
+  color:blueviolet;
+}

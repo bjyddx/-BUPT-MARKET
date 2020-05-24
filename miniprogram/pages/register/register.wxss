@@ -1,45 +1,48 @@
-/* miniprogram/pages/register/register.wxss */
-page{
-background-color:white;
+/* pages/register/register.wxss */
+/* pages/login/login.wxss */
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
-.account{
-display: flex;
-flex-direction: row;
-padding-left: 20px;
-padding-top: 20px;
-padding-bottom: 10px;
-width: 90%;
+.container image {
+  width: 100%;
+  height: 100%;
+}
+.login_box{
+  width: 90%;
+  position: absolute;
+  top: 10%;
+  left: 5%;
+}
+.section{
+  width: 100%;
+  border-bottom: 4rpx solid #FFF;
+  margin-top: 40rpx;
+  position: relative;
+}
+.section input{
+  height: 100rpx;
+  color: #FFF;
+  box-sizing: border-box;
+  padding-left: 80rpx;
+  font-size: 36rpx;
+}
+.section image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+}
+.color{
+  color: #FFF;
+}
+.register{
+  margin-top: 200rpx;
+}
+.register{
+  background: #fa5151 !important;
+  color: #FFF !important;
 }
 
-.title{
-margin-top: 100rpx;
-text-align: center;
-font-size: 50rpx;
-}
-
-.title1{
-margin-right: 30px;
-font-weight: bold;
-font-size:40rpx;
-}
-.border1{
-background-color:#E0E3DA;
-height: 5rpx;
-width: 80%;
-margin-top: 20rpx;
-margin-left: 50rpx;
-}
-.button{
-width: 80%;
-margin-top:20rpx;
-color: white;
-background-color: burlywood;
-border-radius: 98rpx;
-}
-.button::after {
-border-radius: 98rpx;
-}
-
-.login{
-margin-top: 20rpx;
-}

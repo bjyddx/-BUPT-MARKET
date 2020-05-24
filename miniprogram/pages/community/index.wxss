@@ -1,5 +1,6 @@
 /* pages/publish/index.wxss */
 /**index.wxss**/
+
 .refresh{
   background-color: rgb(79, 173, 25);
   float: middle;

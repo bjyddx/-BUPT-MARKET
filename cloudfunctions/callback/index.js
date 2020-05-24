@@ -1,4 +1,4 @@
-const cloud = require('wx-server-sdk')
+const cloud = require('wangkaijie-c2f3e1')
 
 cloud.init({
   // API 调用都保持和云函数当前所在环境一致

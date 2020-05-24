@@ -1,5 +1,5 @@
 <!--miniprogram/pages/types/sports/sports.wxml-->
-<text>体育类商品</text>
+<view class='top'><text>体育类商品</text></view>
 <view wx:for="{{sportlist}}"catchtap="goDetail" data-id="{{item._id}}">
   <van-card
   price="{{item.price}}"

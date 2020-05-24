@@ -1,30 +1,26 @@
-<!--miniprogram/pages/register/register.wxml-->
-<view class="title">用户注册</view>
+<!--pages/register/register.wxml-->
+<view class="container">
+  <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/login_bg.jpg"></image>
+</view>
+<view class="login_box">
+  <view class="section">
+    <input placeholder="请输入学号" placeholder-class="color" bindblur='username' />
+    <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/username.png"></image>
+  </view>
+  <view class="section">
+    <input type='number' maxlength='11' placeholder="请输入手机号" placeholder-class="color" bindblur='mobile' />
+    <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/mobile.png"></image>
+  </view>
 
-<view class="account">
-<view class="title1">账号</view>
-<input class="input" placeholder="请输入账号" bindinput="inputUserName"></input>
+  <view class="section">
+    <input password="true" placeholder="请输入密码" placeholder-class="color" bindblur='pass1' />
+    <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+  </view>
+  <view class="section">
+    <input password="true" placeholder="确认密码" placeholder-class="color" bindblur='pass2' />
+    <image src="https://7069-pintu-game-52d2a-1301643624.tcb.qcloud.la/pintu_icon/pass.png"></image>
+  </view>
+  <button class="register" type="warn" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">注册</button>
 </view>
 
 
-<view class="border1"></view>
-<view class="account"> 
-<view class="title1">密码</view>
-<input bindinput="inputPassword" class="input" placeholder="请输入密码" password="true"></input>
-</view>
-<view class="border1"></view>
-
-
-<view class="account">
-<view class="title1">密码again</view>
-<input bindinput="inputPasswordAgain" class="input" placeholder="请再次输入密码" password="true"></input>
-</view>
-<view class="border1"></view>
-
-<view>
-<button class="button" bindtap="register">注册</button>
-</view>
-
-<navigator url="/pages/login/login">
-<button class="button">点此返回登录</button>
-</navigator>

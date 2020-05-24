@@ -1,5 +1,4 @@
 <view class="container">
-
   <view class="search">
     <view class="search_input">
       <input class="search_input2" placeholder='搜索商品' value='{{searchVal}}' bindconfirm="search" bindinput="input"></input>
@@ -7,20 +6,20 @@
     </view>
     <image class="search_image" src="/images/20190719153008827.png" catchtap="search"></image>
   </view>
+  
   <scroll-view class="search_scroll" scroll-y="true">
       <view class="search_kuangjia"> 
-        <view class="search_items" wx:for="{{goodList.length}}" wx:key="index">
+        <view class="search_items" wx:for="{{goodList}}" bindtap="goDetail" data-id="{{item.id}}">
           <view>
-            <image class="search_images" src="{{goodList[index].image}}"></image>
+            <image class="search_images" src="{{item.image}}"></image>
           </view>
           <view class="wenzi">
-            <view>{{goodList[index].name}}</view>
-            <text class="contnet">{{goodList[index].description}}</text>
-            <view class="rmb">￥{{goodList[index].price}}元</view>
+            <view>{{item.name}}</view>
+            <text class="contnet">{{item.description}}</text>
+            <view class="rmb">￥{{item.price}}元</view>
             <view class="xiangqing">查看详情>></view>
           </view>
         </view>
       </view>
   </scroll-view>
-
 </view>

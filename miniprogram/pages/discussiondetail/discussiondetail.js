@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+array:[1,2,3,4,5]
   },
 
   /**
@@ -14,7 +14,8 @@ Page({
    */
   onLoad: function (options) {
     app.globalData.id = options.id
-    db.collection('discussion').doc(options.id).get({
+    db.collection('discussion').doc(options.id)
+    .get({
       success: res => {
         this.setData({
           comment: res.data
@@ -23,23 +24,30 @@ Page({
     })
   },
 
+
+
+
   submit: function (e) {
     const db = wx.cloud.database()
     wx.cloud.callFunction({
       name: 'addcomment',
       data: {
         id: app.globalData.id,
-        comments: {
-          a: e.detail.value.inputDiscussion,
-          b: 11,
-        }
+        comments: e.detail.value.inputDiscussion,
+         
       },
       success: res => {
         wx.showToast({
           title: '评论成功',
           icon: 'success',
           duration: 2000
-        })
+        });
+        setTimeout(() => {
+          wx.switchTab({
+            url: '/pages/discussiondetail/discussiondetail',
+
+          })
+        }, 1000)
       }
 
     })

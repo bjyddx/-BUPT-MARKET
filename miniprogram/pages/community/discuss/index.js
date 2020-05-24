@@ -7,7 +7,7 @@ Page({
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'),
-    array: ["请选择帖子类型","商品推荐", "商品吐槽", "相关问题", "其他"],
+    array: ["请选择帖子类型", "商品推荐", "商品吐槽", "相关问题", "其他"],
     objectArray: [
       {
         id: 0,
@@ -26,8 +26,8 @@ Page({
         name: '其他'
       },
       {
-        id:4,
-        name:'商品推荐'
+        id: 4,
+        name: '商品推荐'
       }
     ],
     index: 0,
@@ -47,32 +47,17 @@ Page({
   },
 
   onLoad: function () {
-    if (app.globalData.userInfo) {
-      this.setData({
-        userInfo: app.globalData.userInfo,
-        hasUserInfo: true
-      })
-    } else if (this.data.canIUse) {
-      // 由于 getUserInfo 是网络请求，可能会在 Page.onLoad 之后才返回
-      // 所以此处加入 callback 以防止这种情况
-      app.userInfoReadyCallback = res => {
-        this.setData({
-          userInfo: res.userInfo,
-          hasUserInfo: true
+    var that = this;
+    wx.getStorage({
+      key: 'username',
+      success: function (res) {
+        app.globalData.username = res.data
+        that.setData({
+          username: res.data
+
         })
       }
-    } else {
-      // 在没有 open-type=getUserInfo 版本的兼容处理
-      wx.getUserInfo({
-        success: res => {
-          app.globalData.userInfo = res.userInfo
-          this.setData({
-            userInfo: res.userInfo,
-            hasUserInfo: true
-          })
-        }
-      })
-    }
+    })
   },
   changeBigImg() {
     let that = this;
@@ -126,7 +111,8 @@ Page({
         title: e.detail.value.title,
         content: e.detail.value.content,
         type: app.globalData.type,
-        bigImg: new Array(app.globalData.fileID)
+        bigImg: new Array(app.globalData.fileID),
+        owner: app.globalData.username
 
       },
       success: res => {
@@ -135,8 +121,8 @@ Page({
           title: e.detail.value.title,
           content: e.detail.value.content,
           type: app.globalData.type,
-          bigImg: new Array(app.globalData.fileID)
-
+          bigImg: new Array(app.globalData.fileID),
+          owner: app.globalData.username
 
         })
         wx.showToast({
@@ -145,12 +131,12 @@ Page({
           duration: 2000
         });
         setTimeout(() => {
-        wx.switchTab({
+          wx.switchTab({
             url: '../../community/index',
-           
+
           })
-        },1000)
-       //发完贴1秒自动跳转到帖子列表页
+        }, 1000)
+        //发完贴1秒自动跳转到帖子列表页
         console.log('[数据库] [新增记录] 成功，记录 _id: ', res._id)
       },
 
@@ -158,14 +144,14 @@ Page({
         wx.showToast({
           icon: 'none',
           title: '新增记录失败'
-        }); 
+        });
         setTimeout(() => {
           wx.switchTab({
             url: '../../community/index',
 
           })
         }, 1000)
-       //发完贴1秒自动跳转到帖子列表页
+        //发完贴1秒自动跳转到帖子列表页
         console.error('[数据库] [新增记录] 失败：', err)
       }
     })

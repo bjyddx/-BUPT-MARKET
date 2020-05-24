@@ -1,45 +1,54 @@
-/* miniprogram/pages/login/login.wxss */
-.content{
-margin-top: 40px;
-}
-.account{
-display: flex;
-flex-direction: row;
-padding-left: 20px;
-padding-top: 20px;
-padding-bottom: 10px;
-width: 90%;
-}
-.border1{
-background-color:#E0E3DA;
-height: 5rpx;
-width: 80%;
-margin-top: 20rpx;
-margin-left: 50rpx;
-}
-.title{
-margin-right: 30px;
-font-weight: bold;
-}
+/* pages/login/login.wxss */
+   /* pages/login/login.wxss */
 
-.btn1{
-width: 80%;
-margin-top:40px;
-color: white;
-background-color: burlywood;
-border-radius: 98rpx;
+.login_box{
+  width: 90%;
+  position: absolute;
+  top: 15%;
+  left: 5%;
 }
-.btn1::after {
-border-radius: 98rpx;
+.section{
+  width: 100%;
+  border-bottom: 4rpx solid #FFF;
+  margin-top: 40rpx;
+  position: relative;
 }
-
-.btn2{
-width: 80%;
-margin-top:5rpx;
-color: white;
-background-color: burlywood;
-border-radius: 98rpx;
+.section input{
+  height: 100rpx;
+  color: #FFF;
+  box-sizing: border-box;
+  padding-left: 80rpx;
+  font-size: 36rpx;
 }
-.btn2::after {
-border-radius: 98rpx;
+.section image{
+  width: 60rpx;
+  height: 60rpx;
+  position: absolute;
+  top: 20rpx;
+  left: 10rpx;
+}
+.color{
+  color: #FFF;
+}
+checkbox-group{
+  display: flex;
+  justify-content:flex-end;
+  margin-top: 30rpx;
+  color: #FFF;
+  box-sizing: border-box;
+  padding-right: 20rpx;
+}
+.login{
+  margin-top: 260rpx;
+}
+.register{
+  margin-top: 50rpx;
+}.container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.container image {
+  width: 100%;
+  height: 100%;
 }

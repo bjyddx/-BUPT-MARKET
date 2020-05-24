@@ -1,22 +1,28 @@
-<!--miniprogram/pages/login/login.wxml-->
-<view class="content">
+<!--pages/login/login.wxml-->
 
-<view class="account">
-<view class="title">账号</view>
-<input bindinput="inputName" placeholder="用户名" placeholder-style="color:#999999;"/></view>
-
-<view class="border1"></view>
-
-
-<view class="account">
-<view class="title">密码</view>
-
-<input bindinput="inputPassword" placeholder="请输入密码" password/></view>
-<view class="border1"></view>
-
-
-<button class="btn1" bindtap="login">登录</button> 
+<view class="container">
+  <image src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1589513906845&di=f6db9c85fa71f073a12fee16c41256b1&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201506%2F10%2F20150610090306_HnXav.jpeg"></image>
 </view>
-<navigator url="/pages/register/register">
-<button class="btn2" >注册</button> 
-</navigator>
+
+<view class="login_box">
+
+    
+  
+  <view class="section">
+
+    <input placeholder="请输入用户名 / 手机号" value='{{mobile}}' placeholder-class="color" bindblur='mobile' />
+    
+  </view>
+  <view class="section">
+    <input password='true' placeholder="请输入密码" value='{{pass}}' placeholder-class="color" bindblur='pass' />
+   
+  </view>
+  <checkbox-group bindchange="checkboxChange">
+    <label class="checkbox" wx:for="{{items}}" wx:key='this'>
+      <checkbox value="{{item.name}}" checked="{{item.checked}}" />{{item.value}}
+    </label>
+  </checkbox-group>
+  <button class="login" type="primary" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">登录</button>
+  <button class="register" type="warn" bindtap="register">没有账号，先注册</button>
+</view>
+

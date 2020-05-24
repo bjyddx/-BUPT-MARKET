@@ -7,6 +7,10 @@
 <view slot="tags">
 <van-tag type="primary">{{item.description}}</van-tag>
 </view>
+
+<view slot="footer">
+   
+    <van-button size="mini" bind:click="delete" data-id="{{item._id}}">删除</van-button>
+  </view>
 </van-card>
 </view>
-

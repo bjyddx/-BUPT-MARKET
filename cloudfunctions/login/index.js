@@ -1,7 +1,7 @@
 // 云函数模板
 // 部署：在 cloud-functions/login 文件夹右击选择 “上传并部署”
 
-const cloud = require('wx-server-sdk')
+const cloud = require('wangkaijie-c2f3e1')
 
 // 初始化 cloud
 cloud.init({

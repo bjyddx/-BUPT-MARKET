@@ -1,5 +1,6 @@
 
 const db = wx.cloud.database();//初始化数据库
+const good = db.collection('userData')
 Page({
 
   /**
@@ -65,6 +66,13 @@ Page({
       })
   },
 
+
+  goDetail: function (event) {
+    var id= event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../bookdetail/bookdetail?id=' + id
+    })
+  },
 
   /**
    * 生命周期函数--监听页面显示

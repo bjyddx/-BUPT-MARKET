@@ -1,2 +1,6 @@
 <!--miniprogram/pages/mine/help/help.wxml-->
-<text>miniprogram/pages/mine/help/help.wxml</text>
+<view class="help">
+<text>该小程序现仍处于测试阶段，如果各位用户对于我们小程序有任何建议或者指导，
+请将您的建议发送至我们的邮箱：********@bupt.edu.cn；或拨打客服电话：198****8975；
+我们衷心感谢您的使用和建议。</text>
+</view>

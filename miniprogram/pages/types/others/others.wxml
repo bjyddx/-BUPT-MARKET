@@ -1,6 +1,7 @@
 <!--miniprogram/pages/types/others/others.wxml-->
-
+<view>
 <text>其他商品</text>
+</view>
 <view wx:for="{{otherlist}}"catchtap="goDetail" data-id="{{item._id}}">
   <van-card
   price="{{item.price}}"

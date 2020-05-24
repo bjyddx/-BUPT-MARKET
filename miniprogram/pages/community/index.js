@@ -7,6 +7,7 @@ Page({
    */
   data: {
     discussionlist: []
+   
   },
   img: function () {
     wx.navigateTo({
@@ -28,6 +29,7 @@ Page({
         }
       })
   },
+
   goDetail: function (event) {
     var id = event.currentTarget.dataset.id;
     wx.navigateTo({

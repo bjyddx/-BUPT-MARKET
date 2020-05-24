@@ -1,14 +1,9 @@
 <view class='about'>
-
-
-
   <view class='about-addr'>
     <view class='about-tab'>联系方式</view>
     <view>地址: 北京邮电大学沙河校区</view>
-    <view>联系电话：198********</view>
-    <view>商务合作：xxxx@qq.com</view>
-    
+    <view>联系电话：198****8975</view>
+    <view>邮箱地址：********@bupt.edu.cn</view>
+    <view>商务合作：xxxx@qq.com</view> 
   </view>
-
-
 </view>

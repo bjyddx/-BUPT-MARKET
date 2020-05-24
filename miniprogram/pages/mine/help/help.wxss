@@ -1,1 +1,4 @@
 /* miniprogram/pages/mine/help/help.wxss */
+.help{
+  font-size: 50rpx;
+}

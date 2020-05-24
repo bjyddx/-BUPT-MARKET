@@ -1,5 +1,6 @@
-
+<view>
 <text>书籍类商品</text>
+</view>
 <view wx:for="{{booklist}}"catchtap="goDetail" data-id="{{item._id}}">
   <van-card
   price="{{item.price}}"

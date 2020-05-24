@@ -1,7 +1,32 @@
 <!--miniprogram/pages/mine/index.wxml-->
-<view>
-<image class="tupian" src="/images/WechatIMG489.png"></image>
-</view>
+
+
+
+<!--图片轮播布局-->
+<!--swiper图片轮播布局-->
+<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="{{300000}}" duration="{{1000}}">
+
+ <swiper-item>
+<image class="ad01" src="https://s1.ax1x.com/2020/05/23/Yx34yD.jpg" ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="https://s1.ax1x.com/2020/05/23/Yx3Twd.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="https://s1.ax1x.com/2020/05/23/Yx35Oe.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="https://s1.ax1x.com/2020/05/23/Yx3oeH.jpg"  ></image>
+ </swiper-item>
+
+ <swiper-item>
+<image class="ad01" src="https://s1.ax1x.com/2020/05/23/Yx3hQO.jpg"  ></image>
+ </swiper-item>
+</swiper>
+
 <view class="list-wrapper">
     <view class="alllists">
       <block wx:for="{{menuitems}}" wx:key="menu_for">

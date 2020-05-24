@@ -1,28 +1,27 @@
 <!--pages/search/search.wxml-->
 
-
 <!--图片轮播布局-->
 <!--swiper图片轮播布局-->
-<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="{{3000}}" duration="{{1000}}">
+<swiper indicator-dots="{{true}}" vertical="{{false}}" autoplay="{{true}}" interval="{{300000}}" duration="{{1000}}">
 
  <swiper-item>
-<image class="ad01" src="/images/bupt01.jpg"  ></image>
+<image class="ad01" src="https://wx4.sinaimg.cn/mw690/005P6eODly1gez8e8cja3j316t0u0h9d.jpg" ></image>
  </swiper-item>
 
  <swiper-item>
-<image class="ad01" src="/images/bupt02.jpg"  ></image>
+<image class="ad01" src="https://wx4.sinaimg.cn/mw690/005P6eODly1gez8e8z3ptj31730u0b29.jpg"  ></image>
  </swiper-item>
 
  <swiper-item>
-<image class="ad01" src="/images/bupt03.jpg"  ></image>
+<image class="ad01" src="https://wx2.sinaimg.cn/mw690/005P6eODly1gez8e8d2dhj316t0u04lz.jpg"  ></image>
  </swiper-item>
 
  <swiper-item>
-<image class="ad01" src="/images/bupt04.jpg"  ></image>
+<image class="ad01" src="https://wx1.sinaimg.cn/mw690/005P6eODly1gez8e8etbjj316t0u0azc.jpg"  ></image>
  </swiper-item>
 
  <swiper-item>
-<image class="ad01" src="/images/bupt05.jpg"  ></image>
+<image class="ad01" src="https://wx1.sinaimg.cn/mw690/005P6eODly1gez8e8280uj316t0u0tsl.jpg"  ></image>
  </swiper-item>
 
 
@@ -82,9 +81,11 @@
   title="{{item.name}}"
   email="{{item.email}}"
   wechat="{{item.wechat}}"
-  thumb="{{item.bigImg[0]}}">
+  thumb="{{item.bigImg[0]}}"
+  >
 <view slot="tags">
 <van-tag type="primary">{{item.description}}</van-tag>
 </view>
+
 </van-card>
 </view>

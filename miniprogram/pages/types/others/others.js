@@ -30,7 +30,7 @@ Page({
   goDetail: function (event) {
     var id = event.currentTarget.dataset.id;
     wx.navigateTo({
-      url: '../..otherdetail/otherdetail?id=' + id
+      url: '../../otherdetail/otherdetail?id=' + id
     })
   },
   /**

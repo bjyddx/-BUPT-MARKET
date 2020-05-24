@@ -1,2 +1,14 @@
 <!--pages/bookdetail/bookdetail.wxml-->
-<text>{{book.name}}</text>
+<view>
+<image src="{{book.bigImg[0]}}"></image>
+</view>
+<text>商品名称：{{book.name}}</text>
+<text>商品价格：{{book.price}}元</text>
+<text>商品数量：x{{book.number}}</text>
+<text>商品描述：{{book.description}}</text>
+<text>卖家邮箱：{{book.email}}</text>
+<text>卖家微信：{{book.wechat}}</text>
+
+
+
+
